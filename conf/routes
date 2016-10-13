@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# index
+GET           /                       controllers.Application.index()
+
+# routes on tables
+GET           /assets                 controllers.AssetController.filter
+GET           /assets/row             controllers.AssetController.row
+GET           /contact_persons        controllers.ContactPersonController.contactPersons
+GET           /events                 controllers.EventController.events
+
+GET           /prices                 controllers.PriceController.filterPrice
+
+GET           /vpps                   controllers.VppController.filter
+GET           /vpps/row               controllers.VppController.row
+
+GET           /employees              controllers.EmployeesController.filter
+GET           /employees/row          controllers.EmployeesController.row
+POST          /employees              controllers.EmployeesController.insert
+PUT           /employees              controllers.EmployeesController.update
+DELETE        /employees              controllers.EmployeesController.delete
+
+GET           /user_account           controllers.UserAccountController.filter
+GET           /user_account/row       controllers.UserAccountController.row
