@@ -1,3 +1,5 @@
+# Experimental stage. do not use!
+
 # ApiTables
 ApiTables is a scala library for exposing your database with REST API. Built with Playframework
 
